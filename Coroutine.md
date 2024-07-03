@@ -22,12 +22,8 @@
 ```kotlin
 fun main() {
     orderFood()
-    stopNotification()
     prepareFood()
-    stopNotification()
     deliverFood()
-    stopNotification()
-    sendNotification()
 }
 
 fun orderFood() {
@@ -39,23 +35,6 @@ fun deliverFood() {
     println("Delivering food")
     Thread.sleep(2000)
     println("Food delivered")
-}
-
-var sendingNotification = false
-
-fun sendNotification() {
-    println("Send notification")
-    sendingNotification = true
-    while (sendingNotification) {
-        println("Notification: Food is being prepared...")
-        Thread.sleep(500)
-        sendingNotification = false // Ensure the loop runs only once
-    }
-}
-
-fun stopNotification() {
-    sendingNotification = false
-    println("Stop notification")
 }
 
 fun prepareFood() {
