@@ -55,11 +55,11 @@ fun prepareFood() {
 
 서브 루틴은 메모리에 기능을 모아 놓고, 호출 시 저장된 메모리에 이동한 뒤 실행 후 반환문을 통해 원래 호출 위치로 돌아온다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/a8dcaf93-7993-4615-abbc-cea9b7d78243/2b2da12e-9969-4998-8081-15f9be807932/Untitled.png)
+![Untitled](/images/subroutine.png)
 
 코루틴은 서브 루틴과 비슷하지만 큰 차이점이 있다. 
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/a8dcaf93-7993-4615-abbc-cea9b7d78243/2109b71d-e743-478b-b98a-5914757a7a57/Untitled.png)
+![Untitled](/images/coroutine.png)
 
 서브 루틴은 단일 진입 지점에서 시작 후 단일 반환 지점에서 종료되는 것에 반해, 코루틴은 진입 후 반환문이 없더라도 임의 지점에서 실행 중 동작을 중단하고 이후 해당 지점에서부터 실행을 재개한다. (진입과 반환이 여러 개이다.) 이는 내부적으로 Continuation Passing Style(CPS, 연속 전달 방식)과 State machine을 이용하여 동작한다.
 
