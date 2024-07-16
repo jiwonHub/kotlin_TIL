@@ -2,6 +2,8 @@
 
 프래그먼트는 FragmentManager를 통해 관리되며, 앱이 실행되는 동안 여러 수명 주기 상태를 거친다. 프래그먼트의 수명 주기를 이해하고 적절하게 관리하면 앱의 안정성과 사용자 경험을 향상시킬 수 있다.
 
+![Untitled](/images/fragment-view-lifecycle.png)
+
 ## 주요 수명 주기 상태
 
 1. INITIALIZED
