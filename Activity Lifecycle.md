@@ -2,6 +2,8 @@
 
 안드로이드 애플리케이션에서 Activity는 사용자 인터페이스를 제공하는 기본 단위로, 여러 상태를 거치며 이벤트를 처리하는 생명 주기(Activity Lifecycle)를 가진다. 각 단계에서 호출되는 콜백 메서드를 통해 특정 작업을 수행할 수 있다.
 
+![Untitled](/images/activity_lifecycle.png)
+
 ## 주요 콜백 메서드
 
 1. onCreate()
